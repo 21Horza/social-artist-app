@@ -1,0 +1,21 @@
+.navbar {
+    height: 8vh;
+    width: 100vw;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__logged {
+    margin: 30px;
+}
+
+.navbar__icon {
+    margin-left: auto;
+}
+
+img {
+    margin: 20px;
+    height: 28px;
+    width: 28px;
+}

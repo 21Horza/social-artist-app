@@ -1,0 +1,15 @@
+input {
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    
+}
+
+input::placeholder {
+    padding: 30px;
+}
+
+.search {
+    font-size: 15px;
+    margin-left: 50px;
+}
