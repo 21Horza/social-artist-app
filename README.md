@@ -40,11 +40,16 @@ Note! This app is available only locally, though the contract is deployed.
 
 Step 1: Create a new testnet NEAR ccount (https://wallet.testnet.near.org/) and (or) login with your NEAR testnet account by clicking the wallet icon at the right top corner.
 ------------------------------
+
 Step 2: Register as a user or as an artist by clicking user icon next to the wallet.
 ------------------------------
+
 Step 3: Login using your password.
+------------------------------
+
 Step 4: If you are an artist then create new content when new buttons uppear on the left side. Play with other options.
 ------------------------------
+
 Step 5: Try to send tips by clicking tips icon on any NFT post. 
 ------------------------------
 Step 6: Like any post.
