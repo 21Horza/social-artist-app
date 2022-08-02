@@ -1,7 +1,7 @@
 Social app for NFT artists.
 ========================
+<img width="548" alt="Screenshot 2022-08-02 at 19 36 01" src="https://user-images.githubusercontent.com/81642088/182391195-6b4a23ab-ed0a-4164-8861-899062327564.png">
 
-<img width="548" alt="Screenshot 2022-08-02 at 19 36 01" src="https://user-images.githubusercontent.com/81642088/182386803-62cf0b85-8e6f-4be5-944c-54a17c950ae8.png">
 
 
 Description:
