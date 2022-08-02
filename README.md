@@ -1,102 +1,51 @@
-social-artist
-==================
+Social app for NFT artists.
+========================
 
-This [React] app was initialized with [create-near-app]
-
-
-Quick Start
-===========
-
-To run this project locally:
-
-1. Prerequisites: Make sure you've installed [Node.js] ≥ 12
-2. Install dependencies: `yarn install`
-3. Run the local development server: `yarn dev` (see `package.json` for a
-   full list of `scripts` you can run with `yarn`)
-
-Now you'll have a local development environment backed by the NEAR TestNet!
-
-Go ahead and play with the app and the code. As you make code changes, the app will automatically reload.
+<img width="548" alt="Screenshot 2022-08-02 at 19 36 01" src="https://user-images.githubusercontent.com/81642088/182386803-62cf0b85-8e6f-4be5-944c-54a17c950ae8.png">
 
 
-Exploring The Code
-==================
-
-1. The "backend" code lives in the `/contract` folder. See the README there for
-   more info.
-2. The frontend code lives in the `/src` folder. `/src/index.html` is a great
-   place to start exploring. Note that it loads in `/src/index.js`, where you
-   can learn how the frontend connects to the NEAR blockchain.
-3. Tests: there are different kinds of tests for the frontend and the smart
-   contract. See `contract/README` for info about how it's tested. The frontend
-   code gets tested with [jest]. You can run both of these at once with `yarn
-   run test`.
+Description:
+=================
+The idea of this app is to let people give tips to NFT artists to support their art.
+There are two options to use this app: register as a user or as an artist.
+Artists can create NFT, describe their art, share a link to marketplaces and receive tips from users for their work. Artstis also can send tips to other creators, delete personal posts and like other posts.
+Users are able see content, read NFT description and send tips.
 
 
-Deploy
-======
-
-Every smart contract in NEAR has its [own associated account][NEAR accounts]. When you run `yarn dev`, your smart contract gets deployed to the live NEAR TestNet with a throwaway account. When you're ready to make it permanent, here's how.
-
-
-Step 0: Install near-cli (optional)
--------------------------------------
-
-[near-cli] is a command line interface (CLI) for interacting with the NEAR blockchain. It was installed to the local `node_modules` folder when you ran `yarn install`, but for best ergonomics you may want to install it globally:
-
-    yarn install --global near-cli
-
-Or, if you'd rather use the locally-installed version, you can prefix all `near` commands with `npx`
-
-Ensure that it's installed with `near --version` (or `npx near --version`)
+Structure:
+================
+The contract itself is located in contract folder. 
+Frontend part in src folder.
+Server side is in server folder.
 
 
-Step 1: Create an account for the contract
-------------------------------------------
 
-Each account on NEAR can have at most one contract deployed to it. If you've already created an account such as `your-name.testnet`, you can deploy your contract to `social-artist.your-name.testnet`. Assuming you've already created an account on [NEAR Wallet], here's how to create `social-artist.your-name.testnet`:
+To run locally:
+================
+Step 1: After downloading the code ```cd``` to server and run ```npm run dev``` command.
+--------------------------------------------------
 
-1. Authorize NEAR CLI, following the commands it gives you:
+Step 2: Open new terminal and ```cd``` to src folder then run ```npm run dev```.
+--------------------------------------------------
 
-      near login
-
-2. Create a subaccount (replace `YOUR-NAME` below with your actual account name):
-
-      near create-account social-artist.YOUR-NAME.testnet --masterAccount YOUR-NAME.testnet
-
-
-Step 2: set contract name in code
----------------------------------
-
-Modify the line in `src/config.js` that sets the account name of the contract. Set it to the account id you used above.
-
-    const CONTRACT_NAME = process.env.CONTRACT_NAME || 'social-artist.YOUR-NAME.testnet'
+Step 3: Follow instrinctions of **How to** section.
+--------------------------------------------------
 
 
-Step 3: deploy!
----------------
-
-One command:
-
-    yarn deploy
-
-As you can see in `package.json`, this does two things:
-
-1. builds & deploys smart contract to NEAR TestNet
-2. builds & deploys frontend code to GitHub using [gh-pages]. This will only work if the project already has a repository set up on GitHub. Feel free to modify the `deploy` script in `package.json` to deploy elsewhere.
+How to:
+=======================
+Note! This app is available only locally, though the contract is deployed.
+----------------------------------
 
 
-Troubleshooting
-===============
-
-On Windows, if you're seeing an error containing `EPERM` it may be related to spaces in your path. Please see [this issue](https://github.com/zkat/npx/issues/209) for more details.
-
-
-  [React]: https://reactjs.org/
-  [create-near-app]: https://github.com/near/create-near-app
-  [Node.js]: https://nodejs.org/en/download/package-manager/
-  [jest]: https://jestjs.io/
-  [NEAR accounts]: https://docs.near.org/docs/concepts/account
-  [NEAR Wallet]: https://wallet.testnet.near.org/
-  [near-cli]: https://github.com/near/near-cli
-  [gh-pages]: https://github.com/tschaub/gh-pages
+Step 1: Create a new testnet NEAR ccount (https://wallet.testnet.near.org/) and (or) login with your NEAR testnet account by clicking the wallet icon at the right top corner.
+------------------------------
+Step 2: Register as a user or as an artist by clicking user icon next to the wallet.
+------------------------------
+Step 3: Login using your password.
+Step 4: If you are an artist then create new content when new buttons uppear on the left side. Play with other options.
+------------------------------
+Step 5: Try to send tips by clicking tips icon on any NFT post. 
+------------------------------
+Step 6: Like any post.
+------------------------------
